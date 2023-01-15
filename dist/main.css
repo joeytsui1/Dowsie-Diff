@@ -1,0 +1,128 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+nav {
+  background-color: rgb(53, 54, 58);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  margin-left: 20px;
+}
+
+.User-Info {
+  display: flex;
+  justify-content: left;
+  background-image: url("https://cdn1.dotesports.com/wp-content/uploads/2020/01/20115721/TFT_Teaser_Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#icon-pic {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+#username {
+  margin: 20px;
+  clear: left;
+  font-weight: bold;
+}
+
+#summoner-level {
+  margin: 20px;
+  float: both;
+}
+
+#username-input {
+  height: 22 px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+#search-button {
+  width: 13px;
+  height: 13px;
+}
+
+.search-bar {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: large;
+  background-color: rgb(65, 57, 99);
+  color: white;
+  /* x-axis position is 0px from left and y-axis is 50px from top, which will move the image down 50px from top */
+}
+
+.User-Info {
+  margin-bottom: 30px;
+}
+
+.User-rank-info {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+#match-histry {
+  display: grid;
+  place-items: 4500%;
+  margin-right: 5px;
+}
+
+#unit-cost-2 {
+  margin-right: 5px;
+  height: 50px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+#unit-cost-1 {
+  margin-right: 5px;
+  height: 50px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+#unit-cost-0 {
+  margin-right: 5px;
+  height: 50px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+#unit-cost-4 {
+  margin-right: 5px;
+  height: 50px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+#unit-cost-6 {
+  margin-right: 5px;
+  height: 50px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+#unit-cost-6:hover::after {
+  content: attr(id);
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+}
+
+#rank-pic {
+  height: 150px;
+  width: 150px;
+}

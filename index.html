@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/main.css" />
+    <script src="./dist/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <title>TFT User Search</title>
+    <nav>
+        <div id="title">
+            <h1>TFT Searcher</h1>
+        </div>
+        <div class="search-bar">
+            <form>
+                <input type="text" id="username-input" placeholder="Search Summoner">
+                <button type="submit" id="submit-button-user"><img id="search-button"
+                        src="https://img.icons8.com/ios-glyphs/512/search.png" alt="search"></button>
+            </form>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="User-Info">
+        <div><img id="icon-pic"></div>
+        <div id="username"></div>
+        <div id="summoner-level"></div>
+
+    </div>
+
+    <div class="User-rank-info">
+        <div><img id="rank-pic"></div>
+        <div id="rank"></div>
+        <div id="tier"></div>
+        <div id="wins"></div>
+        <div id="losses"></div>
+        <div id="lp"></div>
+        <div><canvas id="top4"></canvas></div>
+    </div>
+
+    <div id="match-histry">
+        <table id="table">
+            <tr id="id-input"></tr>
+            <tr id="durationInput"></tr>
+            <tr id="outcomeInput"></tr>
+        </table>
+    </div>
+</body>
+
+</html>
