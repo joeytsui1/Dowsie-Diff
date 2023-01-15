@@ -1,4 +1,5 @@
-import Chart from 'chart.js';
+import Chart from 'chart.js/auto'
+
 class Top4Chart {
     constructor(arr) {
         this.arr = arr
@@ -9,13 +10,13 @@ class Top4Chart {
         let ctx = document.getElementById('top4').getContext('2d');
 
         // Create the chart by passing in the canvas and chart options
-        let chart = new Chart(ctx, {
+        var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 labels: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'],
                 datasets: [{
-                    label: '# of Placements',
-                    data: null,
+                    label: 'Placements',
+                    data: [ 2, 3, 5, 0, 4, 2, 2, 2],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -43,7 +44,6 @@ class Top4Chart {
                 }
             }
         });
-        return chart
     }
 }
 

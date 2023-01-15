@@ -7,6 +7,7 @@ class MatchHistory {
         this.puuid;
         this.placements = []
         this.getMatches()
+        this.makeTop4Chart()
     }
 
     resetTable() {
