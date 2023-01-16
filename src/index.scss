@@ -29,14 +29,15 @@ nav {
 }
 
 #username {
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     clear: left;
     font-weight: bold;
 }
 
 #summoner-level {
-    margin: 20px;
-    float: both;
+    margin-left: 20px;
+    font-weight: bold
 }
 
 #username-input {
@@ -78,14 +79,17 @@ body {
 }
 
 .User-rank-info {
+    font-weight: bold;
     margin-left: 20px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #match-histry {
-    display: grid;
-    place-items: center;
-    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
 #unit-cost-2 {
@@ -137,4 +141,16 @@ body {
 #rank-pic {
     height: 150px;
     width: 150px;
+}
+
+canvas {
+    width: 375px;
+    max-width: 375px;
+
+    height: 375px;
+    max-height: 375px;
+}
+
+.User-rank-info {
+
 }

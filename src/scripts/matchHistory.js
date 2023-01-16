@@ -50,7 +50,16 @@ class MatchHistory {
                 }
             }
 
-            matchOutcomeCell.innerHTML = match.info.participants[index].placement
+            if (match.info.participants[index].placement === 1) {
+                matchOutcomeCell.innerHTML = `${match.info.participants[index].placement}st`
+            } else if (match.info.participants[index].placement === 2){
+                matchOutcomeCell.innerHTML = `${match.info.participants[index].placement}nd`
+            } else if (match.info.participants[index].placement === 3) {
+                matchOutcomeCell.innerHTML = `${match.info.participants[index].placement}rd`
+            } else {
+                matchOutcomeCell.innerHTML = `${match.info.participants[index].placement}th`
+            }
+            
             this.placements.push(match.info.participants[index].placement)
             let units = match.info.participants[index].units
 

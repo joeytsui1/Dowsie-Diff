@@ -60,7 +60,6 @@ class Top4Chart {
                 }
             }
         });
-        console.log(this.chart)
     }
 }
 
