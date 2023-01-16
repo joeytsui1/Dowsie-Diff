@@ -1,13 +1,11 @@
 import Top4Chart from "./top4Chart.js"
 
 class MatchHistory {
-    constructor(userInput) {
-        this.userInput = userInput
-        this.url = `https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${this.userInput}?api_key=RGAPI-bfbe1f08-3017-4d7f-9dbc-123f5368a187`
-        this.puuid;
+    constructor(data) {
+        this.data = data
+        this.data.puuid;
         this.placements = []
-        this.getMatches()
-        this.makeTop4Chart()
+        this.getMatchData()
     }
 
     resetTable() {
@@ -15,32 +13,25 @@ class MatchHistory {
         table.innerHTML = ""
     }
 
-    getMatchData(puuid) {
-        return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${puuid}/ids?start=0&count=20&api_key=RGAPI-bfbe1f08-3017-4d7f-9dbc-123f5368a187`)
+    getMatchData() {
+        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
             .then(response => response.json())
             .then(data => {
                 const matches = data.map(match => {
-                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-bfbe1f08-3017-4d7f-9dbc-123f5368a187`)
+                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
                 })
                 return Promise.all(matches)
             })
             .then(matchResponses => Promise.all(matchResponses.map(res => res.json())))
-    }
-
-    getMatches(url = this.url) {
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                this.puuid = data.puuid
-                return this.getMatchData(this.puuid)
-            })
             .then(matches => {
                 this.resetTable()
                 matches.forEach(match => {
                     this.displayMatches(match)
                 })
+
+                new Top4Chart(this.placements)
             })
-            .catch(err => err);
+            .catch(err => err)
     }
 
     displayMatches(match) {
@@ -54,12 +45,13 @@ class MatchHistory {
             let players = match.metadata.participants
             let index;
             for (let i = 0; i < players.length; i++) {
-                if (players[i] === this.puuid) {
+                if (players[i] === this.data.puuid) {
                     index = i
                 }
             }
-            this.placements.push(match.info.participants[index].placement)
+
             matchOutcomeCell.innerHTML = match.info.participants[index].placement
+            this.placements.push(match.info.participants[index].placement)
             let units = match.info.participants[index].units
 
             units.forEach(unit => {
@@ -79,11 +71,6 @@ class MatchHistory {
 
             })
         }
-    }
-
-    makeTop4Chart() {
-        this.chart = new Top4Chart(this.placements)
-        this.chart.makeChart()
     }
 }
 

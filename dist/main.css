@@ -82,30 +82,35 @@ body {
 }
 
 #unit-cost-2 {
+  margin-left: 5px;
   margin-right: 5px;
   height: 50px;
   border: 5px solid rgb(61, 120, 193);
 }
 
 #unit-cost-1 {
+  margin-left: 5px;
   margin-right: 5px;
   height: 50px;
   border: 5px solid rgb(82, 175, 139);
 }
 
 #unit-cost-0 {
+  margin-left: 5px;
   margin-right: 5px;
   height: 50px;
   border: 5px solid rgb(128, 128, 128);
 }
 
 #unit-cost-4 {
+  margin-left: 5px;
   margin-right: 5px;
   height: 50px;
   border: 5px solid rgb(181, 74, 211);
 }
 
 #unit-cost-6 {
+  margin-left: 5px;
   margin-right: 5px;
   height: 50px;
   border: 5px solid rgb(245, 188, 86);
