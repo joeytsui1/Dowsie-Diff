@@ -9,7 +9,6 @@ class UserRankInfo {
         let rank = data.length === 0 ? "Provisional" : data[0].tier.slice(0, 1) + data[0].tier.slice(1).toLowerCase();
         if (data.length === 0) {
             document.querySelector("#rank").innerHTML = `Unranked`;
-            document.querySelector("#tier").innerHTML = `0`;
             document.querySelector("#wins").innerHTML = `Wins: 0`;
             document.querySelector("#losses").innerHTML = `Losses: 0`;
             document.querySelector("#lp").innerHTML = `LP: 0`;

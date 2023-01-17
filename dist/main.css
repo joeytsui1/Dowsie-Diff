@@ -22,7 +22,6 @@ nav {
 }
 
 #icon-pic {
-  float: left;
   height: 100px;
   width: 100px;
   margin: 20px;
@@ -72,6 +71,7 @@ body {
 }
 
 .User-rank-info {
+  position: relative;
   font-weight: bold;
   padding: 30px;
   margin-top: 30px;
@@ -85,7 +85,6 @@ body {
 #match-histry {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 100px;
   font-weight: bold;
 }
 
@@ -141,8 +140,8 @@ body {
 }
 
 canvas {
-  max-width: 450px;
-  max-height: 450px;
+  max-width: 375px;
+  max-height: 375px;
 }
 
 #rank-tier {
@@ -193,4 +192,14 @@ canvas {
 
 input#user-input {
   color: #26044f;
+}
+
+#last20gamestext {
+  padding-left: 30px;
+}
+
+#about {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-weight: bold;
 }

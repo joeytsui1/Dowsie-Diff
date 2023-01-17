@@ -10,6 +10,7 @@ class Top4Chart {
     }
 
     getPlacements() {
+        console.log(this.placements)
         for (let i = 0; i < this.placements.length; i++) {
             this.hash[this.placements[i]] += 1
         }
@@ -31,15 +32,15 @@ class Top4Chart {
             data: {
                 labels: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'],
                 datasets: [{
-                    label: 'Placements',
+                    label: 'Placements for last 20 Ranked games',
                     data: this.newArr,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
+                        'rgba(255, 99, 132, 0.75)',
+                        'rgba(54, 162, 235, 0.75)',
+                        'rgba(255, 206, 86, 0.75)',
+                        'rgba(75, 192, 192, 0.75)',
+                        'rgba(153, 102, 255, 0.75)',
+                        'rgba(255, 159, 64, 0.75)'
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',

@@ -11,9 +11,11 @@
     <title>TFT User Search</title>
     <nav>
         <div id="title">
-            <h1>TFT Searcher</h1>
+            <h1>DOWSIE DIFF</h1>
         </div>
+
         <div class="search-bar">
+            <div id="about">ABOUT</div>
             <form>
                 <input type="text" id="username-input" placeholder="Search Summoner">
                 <button type="submit"  id="submit-button-user"><img id="search-button"
@@ -49,10 +51,14 @@
 
     </div>
     
-
+    <h2 id="last20gamestext">Last 20 Games</h2>
     <div id="match-histry">
+        
         <table id="table">
-            <thead></thead>
+            <tr>
+                <th>Placed</th>
+                <th>Units Played</th>
+            </tr>
         </table>
 
         <canvas id="units-played"></canvas>

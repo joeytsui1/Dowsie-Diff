@@ -6,12 +6,12 @@ import WinRatio from './scripts/winRatio'
 document.addEventListener('DOMContentLoaded', () => {
 
     // let myUserName = 'mínasrmy'
-    // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
+    // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
     //     .then(response => response.json())
     //     .then(data => {
     //         new UserInfo(data)
     //         new MatchHistory(data)
-    //         return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
+    //         return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
     //             .then(response => response.json())
     //             .then(data => {
     //                 if (data.length === 0) {
@@ -21,19 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
     //                 }
 
     //                 new UserRankInfo(data)
-    //             })
+    //             })   
     //     })
+
+
     const submitUsername = document.querySelector("#submit-button-user")
     submitUsername.addEventListener("click", e => {
         e.preventDefault()
         const username = document.querySelector("#username-input").value
 
-        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
+        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
             .then(response => response.json())
             .then(data => {
                 new UserInfo(data)
                 new MatchHistory(data)
-                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
+                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
                     .then(response => response.json())
                     .then(data => {
                         if(data.length === 0){
@@ -44,6 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         
                         new UserRankInfo(data)
                     })
+            }).catch(error => {
+                alert("User Is Not Found, Try Again")
             })
     })
 })

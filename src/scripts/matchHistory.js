@@ -16,11 +16,11 @@ class MatchHistory {
     }
 
     getMatchData() {
-        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
+        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
             .then(response => response.json())
             .then(data => {
                 const matches = data.map(match => {
-                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-3a73e5bf-c55c-43db-a2da-c1ab5aecc22f`)
+                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
                 })
                 return Promise.all(matches)
             })
@@ -32,7 +32,6 @@ class MatchHistory {
                 })
 
                 new Top4Chart(this.placements)
-                console.log(this.unitsPlayed)
                 new UnitStats(this.unitsPlayed)
             })
             .catch(err => err)
@@ -42,7 +41,7 @@ class MatchHistory {
         if (match.info.tft_set_number === 8) {
             let table = document.querySelector("#table")
             let row = table.insertRow();
-
+            
             let placement = row.insertCell();
             let unitsInGame = row.insertCell();
 

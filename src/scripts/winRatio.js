@@ -18,13 +18,13 @@ class WinRatio{
         var chart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Wins in %', "Losses in %"],
+                labels: ['Wins in % Ranked games played', "Losses in % for Ranked games played"],
                 datasets: [{
                     label: 'Results',
                     data: [((this.wins/(this.wins + this.losses)) * 100), ((this.losses/(this.wins + this.losses)) * 100)],
                     backgroundColor: [
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 99, 132, 0.2)'
+                        'rgba(54, 162, 235, 0.75)',
+                        'rgba(255, 99, 132, 0.75)'
                     ],
                     borderColor: [
                         
