@@ -1,38 +1,56 @@
 import { Chart } from 'chart.js/auto';
 
-class Top4Chart {
-    constructor(placements) {
-        this.placements = placements
-        this.hash = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 }
-        this.newArr =[]
-        this.getPlacements() 
+class UnitStats {
+    constructor(unitsPlayed) {
+        this.unitsPlayed = unitsPlayed
+        this.hash = {}
+        this.unitName = []
+        this.numsTimePlayed = []
+        this.makeHash()
+        this.sortHash()
         this.makeChart()
     }
 
-    getPlacements() {
-        for (let i = 0; i < this.placements.length; i++) {
-            this.hash[this.placements[i]] += 1
+    makeHash() {
+        for (let i = 0; i < this.unitsPlayed.length; i++) {
+            if (!this.hash[this.unitsPlayed[i]]){
+                this.hash[this.unitsPlayed[i]] = 1
+            } else {
+                this.hash[this.unitsPlayed[i]] += 1
+            }
         }
+        console.log(this.hash)
+    }
+
+    sortHash() {
+        const sortedHash = Object.entries(this.hash)
+            .sort((a, b) => b[1] - a[1])
+            .reduce((obj, [key, value]) => {
+                obj[key] = value;
+                return obj;
+            }, {});
+        this.hash = sortedHash;
 
         for (let key in this.hash) {
-            this.newArr.push(this.hash[key])
+            this.unitName.push(key)
+            this.numsTimePlayed.push(this.hash[key])
         }
     }
 
     makeChart() {
 
-        let ctx = document.getElementById('top4');
-        let chartStatus = Chart.getChart("top4")
+        let ctx = document.getElementById('units-played');
+        let chartStatus = Chart.getChart("units-played")
         if (chartStatus != undefined) {
             chartStatus.destroy()
         }
         var chart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'],
+                labels: this.unitName,
                 datasets: [{
-                    label: 'Placements',
-                    data: this.newArr,
+                    label: ['Number of times played'], 
+                    data: this.numsTimePlayed,
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -62,5 +80,4 @@ class Top4Chart {
         });
     }
 }
-
-export default Top4Chart
+export default UnitStats

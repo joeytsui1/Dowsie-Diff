@@ -17,8 +17,7 @@ class UserRankInfo {
             if (data[0].tier === "GRANDMASTER") {
                 rank = data[0].tier.slice(0, 1) + data[0].tier.slice(1, 5).toLowerCase() + data[0].tier.slice(5, 6) + data[0].tier.slice(6).toLowerCase();
             }
-            document.querySelector("#rank").innerHTML = `${data[0].tier}`;
-            document.querySelector("#tier").innerHTML = `${data[0].rank}`;
+            document.querySelector("#rank").innerHTML = `${data[0].tier} ${data[0].rank}`;
             document.querySelector("#wins").innerHTML = `Wins: ${data[0].wins}`;
             document.querySelector("#losses").innerHTML = `Losses: ${data[0].losses}`;
             document.querySelector("#lp").innerHTML = `LP: ${data[0].leaguePoints}`;

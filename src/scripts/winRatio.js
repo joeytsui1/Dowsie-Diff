@@ -8,7 +8,6 @@ class WinRatio{
     }
 
     makeChart () {
-        
         var ctx = document.getElementById('win-loss').getContext('2d');
         ctx.height = 500;
         ctx.width = 800;
@@ -19,10 +18,10 @@ class WinRatio{
         var chart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Wins', "Losses"],
+                labels: ['Wins in %', "Losses in %"],
                 datasets: [{
                     label: 'Results',
-                    data: [this.wins, this.losses],
+                    data: [((this.wins/(this.wins + this.losses)) * 100), ((this.losses/(this.wins + this.losses)) * 100)],
                     backgroundColor: [
                         'rgba(54, 162, 235, 0.2)',
                         'rgba(255, 99, 132, 0.2)'

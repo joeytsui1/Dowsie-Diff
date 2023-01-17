@@ -12,7 +12,7 @@ class UserInfo {
 
         const lvl = document.querySelector("#summoner-level")
         username.innerHTML = `${data.name}`;
-        lvl.innerHTML = `level ${data.summonerLevel}`
+        lvl.innerHTML = `Level ${data.summonerLevel}`
     }
 }
 

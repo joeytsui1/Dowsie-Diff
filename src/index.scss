@@ -65,7 +65,7 @@ body {
 
     font-family: sans-serif;
     font-size: large;
-    background-color: rgb(65, 57, 99);
+    background-color: adjust-hue($color: #26044f, $degrees: 0);
     color: white;
     // background-image: url(https://cdnportal.mobalytics.gg/production/2022/11/58fe50e6-tft_set822_art_keyart-nologo_3840x2160_final_v005.jpg);
     //     background-size: cover;
@@ -73,23 +73,28 @@ body {
     /* x-axis position is 0px from left and y-axis is 50px from top, which will move the image down 50px from top */
 }
 
-.User-Info {
-
+.User-Info {    
     margin-bottom: 30px;
 }
 
 .User-rank-info {
     font-weight: bold;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(55, 44, 98);
 }
 
 #match-histry {
+
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
+    font-weight: bold;
+
 }
 
 #unit-cost-2 {
@@ -139,18 +144,60 @@ body {
 }
 
 #rank-pic {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
 }
 
-canvas {
-    width: 375px;
-    max-width: 375px;
+canvas {    
+    max-width: 450px;
 
-    height: 375px;
-    max-height: 375px;
+    max-height: 450px;
 }
 
-.User-rank-info {
+#rank-tier {
+    display: flex;
+    float: left;
+}
 
+#tier {
+    margin-left: 5px;
+}
+
+#wins {
+    display: grid;
+    justify-content: center;
+}
+#losses {
+    display: grid;
+    justify-content: center;
+}
+#lp{
+    display: grid;
+    justify-content: center;
+}
+
+#rank {
+    display: flex;
+    justify-content: center;
+}
+
+#units-played {
+    max-width: 900px;
+    max-height: 600px;
+    background-color: rgb(55, 44, 98);
+    padding: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#table {
+    padding: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(55, 44, 98);
+}
+
+input#user-input{
+    color: #26044f;
 }

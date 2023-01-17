@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
     <script src="./dist/main.js"></script>
     <title>TFT User Search</title>
     <nav>
@@ -34,13 +35,14 @@
     </div>
 
     <div class="User-rank-info">
-        <div><img id="rank-pic"></div>
-        <div #info>
-            <div id="rank"></div>
-            <div id="tier"></div>
-            <div id="wins"></div>
-            <div id="losses"></div>
-            <div id="lp"></div>
+        <div>
+            <img id="rank-pic">
+            <div #info>
+                <div id="rank"></div>
+                <div id="wins"></div>
+                <div id="losses"></div>
+                <div id="lp"></div>
+            </div>
         </div>
         <canvas id="win-loss"></canvas>
         <canvas id="top4"></canvas>
@@ -50,7 +52,10 @@
 
     <div id="match-histry">
         <table id="table">
+            <thead></thead>
         </table>
+
+        <canvas id="units-played"></canvas>
     </div>
 </body>
 
