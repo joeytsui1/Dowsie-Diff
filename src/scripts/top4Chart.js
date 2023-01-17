@@ -56,7 +56,15 @@ class Top4Chart {
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            color: "white"
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: "white"
+                        }
                     }
                 }
             }

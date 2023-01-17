@@ -22,9 +22,11 @@ nav {
 }
 
 #icon-pic {
+  border-radius: 5px;
   height: 100px;
   width: 100px;
   margin: 20px;
+  margin-left: 30px;
 }
 
 #username {
@@ -71,6 +73,7 @@ body {
 }
 
 .User-rank-info {
+  border-radius: 15px;
   position: relative;
   font-weight: bold;
   padding: 30px;
@@ -78,17 +81,19 @@ body {
   margin-right: 30px;
   margin-left: 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: rgb(55, 44, 98);
 }
 
 #match-histry {
+  border-radius: 15px;
   display: flex;
   justify-content: space-evenly;
   font-weight: bold;
 }
 
 #unit-cost-2 {
+  border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
   height: 50px;
@@ -96,6 +101,7 @@ body {
 }
 
 #unit-cost-1 {
+  border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
   height: 50px;
@@ -103,6 +109,7 @@ body {
 }
 
 #unit-cost-0 {
+  border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
   height: 50px;
@@ -110,6 +117,7 @@ body {
 }
 
 #unit-cost-4 {
+  border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
   height: 50px;
@@ -117,21 +125,11 @@ body {
 }
 
 #unit-cost-6 {
+  border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
   height: 50px;
   border: 5px solid rgb(245, 188, 86);
-}
-
-#unit-cost-6:hover::after {
-  content: attr(id);
-  position: absolute;
-  background-color: white;
-  padding: 2px;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
 }
 
 #rank-pic {
@@ -174,6 +172,7 @@ canvas {
 }
 
 #units-played {
+  border-radius: 15px;
   max-width: 900px;
   max-height: 600px;
   background-color: rgb(55, 44, 98);
@@ -184,6 +183,7 @@ canvas {
 }
 
 #table {
+  border-radius: 15px;
   padding: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
