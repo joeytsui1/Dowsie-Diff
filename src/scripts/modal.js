@@ -21,6 +21,6 @@ class Modals {
     }
 }
 
-export default Modals
+// export default Modals
  // modal.style.display = 'block'
         // backdrop.style.display = 'block'

@@ -7,12 +7,12 @@ import WinRatio from './scripts/winRatio'
 document.addEventListener('DOMContentLoaded', () => {
 
     // let myUserName = 'mínasrmy'
-    // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
+    // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
     //     .then(response => response.json())
     //     .then(data => {
     //         new UserInfo(data)
     //         new MatchHistory(data)
-    //         return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
+    //         return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
     //             .then(response => response.json())
     //             .then(data => {
     //                 if (data.length === 0) {
@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault()
         const username = document.querySelector("#username-input").value
 
-        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
+        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
             .then(response => response.json())
             .then(data => {
                 new UserInfo(data)
                 new MatchHistory(data)
-                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
+                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
                     .then(response => response.json())
                     .then(data => {
                         if(data.length === 0){

@@ -1,3 +1,4 @@
+
 import Top4Chart from "./top4Chart.js"
 import UnitStats from "./unitStats.js"
 
@@ -16,11 +17,11 @@ class MatchHistory {
     }
 
     getMatchData() {
-        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
+        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
             .then(response => response.json())
             .then(data => {
                 const matches = data.map(match => {
-                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-e1c21f24-b87a-44fe-bda6-37336e73c8a6`)
+                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
                 })
                 return Promise.all(matches)
             })
@@ -78,7 +79,7 @@ class MatchHistory {
                     } else {
                         unitName = unit.character_id
                         img.src = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-hero-augment/${unitName}.TFT_Set8.png`
-                        img.setAttribute('class', `${unitName.slice(5) }`)
+                        img.setAttribute('class', `${unitName.slice(5)}`)
                         unitsInGame.appendChild(img)
                         this.unitsPlayed.push(unitName)
                     }
@@ -88,5 +89,6 @@ class MatchHistory {
         }
     }
 }
+
 
 export default MatchHistory
