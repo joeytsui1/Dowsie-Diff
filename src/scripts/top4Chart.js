@@ -10,7 +10,6 @@ class Top4Chart {
     }
 
     getPlacements() {
-        console.log(this.placements)
         for (let i = 0; i < this.placements.length; i++) {
             this.hash[this.placements[i]] += 1
         }

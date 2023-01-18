@@ -41,7 +41,7 @@ class MatchHistory {
         if (match.info.tft_set_number === 8) {
             let table = document.querySelector("#table")
             let row = table.insertRow();
-            
+
             let placement = row.insertCell();
             let unitsInGame = row.insertCell();
 
@@ -52,7 +52,7 @@ class MatchHistory {
                     index = i
                 }
             }
-            if (match.info.queue_id === 1100){
+            if (match.info.queue_id === 1100) {
                 if (match.info.participants[index].placement === 1) {
                     placement.innerHTML = `${match.info.participants[index].placement}st`
                 } else if (match.info.participants[index].placement === 2) {
@@ -72,13 +72,13 @@ class MatchHistory {
                     if (unit.character_id === "TFT8_WuKong") {
                         unitName = unit.character_id.slice(0, 7) + unit.character_id.slice(7, 8).toLowerCase() + unit.character_id.slice(8)
                         img.src = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-hero-augment/${unitName}.TFT_Set8.png`
-                        img.setAttribute('id', `unit-cost-${unit.rarity}`)
+                        img.setAttribute('class', `${unitName.slice(5)}`)
                         unitsInGame.appendChild(img)
                         this.unitsPlayed.push(unitName)
                     } else {
                         unitName = unit.character_id
                         img.src = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-hero-augment/${unitName}.TFT_Set8.png`
-                        img.setAttribute('id', `unit-cost-${unit.rarity}`)
+                        img.setAttribute('class', `${unitName.slice(5) }`)
                         unitsInGame.appendChild(img)
                         this.unitsPlayed.push(unitName)
                     }

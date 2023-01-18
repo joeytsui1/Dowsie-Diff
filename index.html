@@ -13,9 +13,19 @@
         <div id="title">
             <h1>DOWSIE DIFF</h1>
         </div>
-
         <div class="search-bar">
-            <div id="about">ABOUT</div>
+<div id="about">
+    <ul>
+        <li>
+            <a href="#">ABOUT</a>
+            <ul>
+                <li><a href="https://github.com/joeytsui1">Github <img src="" alt=""></a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
             <form>
                 <input type="text" id="username-input" placeholder="Search Summoner">
                 <button type="submit"  id="submit-button-user"><img id="search-button"
@@ -32,8 +42,6 @@
             <div id="username"></div>
             <div id="summoner-level"></div>
         </div>
-
-
     </div>
 
     <div class="User-rank-info">
@@ -52,12 +60,14 @@
     </div>
     
     <h2 id="last20gamestext">Last 20 Games</h2>
+    <div class="backdrop"></div>
     <div id="match-histry">
         
         <table id="table">
             <tr>
                 <th>Placed</th>
                 <th>Units Played</th>
+                <th><button>open modal</button></th>
             </tr>
         </table>
 

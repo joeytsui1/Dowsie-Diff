@@ -1,18 +1,536 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-nav {
-  background-color: rgb(53, 54, 58);
-  background-size: cover;
-  display: flex;
-  justify-content: space-between;
+.Annie {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
 }
 
-#title {
-  margin-left: 20px;
+.Camille {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Draven {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Ezreal {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Fiora {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Jinx {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.LeeSin {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Malphite {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Rell {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Sivir {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Vi {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Yasuo {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Yuumi {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(82, 175, 139);
+}
+
+.Wukong {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Ashe {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Blitzcrank {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Galio {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Gangplank {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Kayle {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Lulu {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Lux {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Nasus {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Poppy {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Renekton {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Sylas {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Talon {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+.Alistar {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Chogath {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Jax {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Kaisa {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Leblanc {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Nilah {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Rammus {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Riven {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Senna {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Sona {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Vayne {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Velkoz {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.Zoe {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(61, 120, 193);
+}
+
+.AurelionSol {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.BelVeth {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Ekko {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.MissFortune {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Samira {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Sejuani {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Sett {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Soraka {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Taliyah {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Viego {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Zac {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Zed {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(181, 74, 211);
+}
+
+.Aphelios {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Fiddlesticks {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Janna {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Leona {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Mordekaiser {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Nunu {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Syndra {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+.Urgot {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 40px;
+  border: 5px solid rgb(245, 188, 86);
+}
+
+#rank-pic {
+  position: inherit;
+  height: 250px;
+  width: 250px;
+}
+
+.User-rank-info {
+  overflow: auto;
+  display: flex;
+  border-radius: 15px;
+  position: relative;
+  font-weight: bold;
+  padding: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(55, 44, 98);
+}
+
+#rank-tier {
+  display: flex;
+  float: left;
+}
+
+#tier {
+  margin-left: 5px;
+}
+
+#wins {
+  font-size: small;
+  display: grid;
+  justify-content: center;
+}
+
+#losses {
+  font-size: small;
+  display: grid;
+  justify-content: center;
+}
+
+#lp {
+  font-size: small;
+  display: grid;
+  justify-content: center;
+}
+
+#rank {
+  display: flex;
+  justify-content: center;
 }
 
 .User-Info {
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   justify-content: left;
   background-image: url("https://cdn1.dotesports.com/wp-content/uploads/2020/01/20115721/TFT_Teaser_Banner.jpg");
@@ -37,8 +555,22 @@ nav {
 }
 
 #summoner-level {
+  margin-top: 5px;
+  font-size: small;
   margin-left: 20px;
   font-weight: bold;
+}
+
+nav {
+  background-color: rgb(53, 54, 58);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  padding-top: 10px;
+  margin-left: 20px;
 }
 
 #username-input {
@@ -60,29 +592,17 @@ nav {
 }
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-family: sans-serif;
   font-size: large;
   background-color: #26044f;
   color: white;
-  /* x-axis position is 0px from left and y-axis is 50px from top, which will move the image down 50px from top */
 }
 
 .User-Info {
   margin-bottom: 30px;
-}
-
-.User-rank-info {
-  border-radius: 15px;
-  position: relative;
-  font-weight: bold;
-  padding: 30px;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(55, 44, 98);
 }
 
 #match-histry {
@@ -92,83 +612,9 @@ body {
   font-weight: bold;
 }
 
-#unit-cost-2 {
-  border-radius: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 50px;
-  border: 5px solid rgb(61, 120, 193);
-}
-
-#unit-cost-1 {
-  border-radius: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 50px;
-  border: 5px solid rgb(82, 175, 139);
-}
-
-#unit-cost-0 {
-  border-radius: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 50px;
-  border: 5px solid rgb(128, 128, 128);
-}
-
-#unit-cost-4 {
-  border-radius: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 50px;
-  border: 5px solid rgb(181, 74, 211);
-}
-
-#unit-cost-6 {
-  border-radius: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 50px;
-  border: 5px solid rgb(245, 188, 86);
-}
-
-#rank-pic {
-  height: 250px;
-  width: 250px;
-}
-
 canvas {
   max-width: 375px;
   max-height: 375px;
-}
-
-#rank-tier {
-  display: flex;
-  float: left;
-}
-
-#tier {
-  margin-left: 5px;
-}
-
-#wins {
-  display: grid;
-  justify-content: center;
-}
-
-#losses {
-  display: grid;
-  justify-content: center;
-}
-
-#lp {
-  display: grid;
-  justify-content: center;
-}
-
-#rank {
-  display: flex;
-  justify-content: center;
 }
 
 #units-played {
@@ -183,6 +629,7 @@ canvas {
 }
 
 #table {
+  display: grid;
   border-radius: 15px;
   padding: 30px;
   margin-left: 30px;
@@ -190,16 +637,78 @@ canvas {
   background-color: rgb(55, 44, 98);
 }
 
-input#user-input {
-  color: #26044f;
-}
-
 #last20gamestext {
   padding-left: 30px;
 }
 
 #about {
-  margin-top: 20px;
-  margin-right: 10px;
+  background-color: rgb(53, 54, 58);
+  font-size: larger;
+  margin-right: 25px;
+  padding-top: 20px;
   font-weight: bold;
+}
+
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li:hover {
+  background: #555;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+ul li ul li {
+  background: #555;
+  display: block;
+}
+
+ul li ul li a {
+  display: block !important;
+}
+
+ul li ul li:hover {
+  background: #666;
+}
+
+#myButton {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#myModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
 }

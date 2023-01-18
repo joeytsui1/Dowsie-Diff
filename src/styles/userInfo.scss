@@ -1,0 +1,35 @@
+.User-Info {
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: left;
+    background-image: url("https://cdn1.dotesports.com/wp-content/uploads/2020/01/20115721/TFT_Teaser_Banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#icon-pic {
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 30px;
+
+}
+
+#username {
+    margin-top: 20px;
+    margin-left: 20px;
+    clear: left;
+    font-weight: bold;
+}
+
+#summoner-level {
+    margin-top: 5px;
+    font-size: small;
+    margin-left: 20px;
+    font-weight: bold
+}
