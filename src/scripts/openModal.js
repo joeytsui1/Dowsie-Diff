@@ -1,3 +1,0 @@
-class OpenModal {
-    this.modal = 
-}

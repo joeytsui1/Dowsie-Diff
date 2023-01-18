@@ -793,6 +793,8 @@ ul li ul li:hover {
   top: 20%;
   background-color: rgb(55, 44, 98);
   border-radius: 10px;
+  max-width: 1000px;
+  max-height: 1000px;
 }
 
 .modal .flex {
