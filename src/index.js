@@ -6,6 +6,29 @@ import WinRatio from './scripts/winRatio'
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    const modal = document.querySelector(".modal");
+    const overlay = document.querySelector(".overlay");
+    const openModalBtn = document.querySelector(".btn-open");
+    const closeModalBtn = document.querySelector(".btn-close");
+
+    
+    const openModal = function () {
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+    };
+
+    openModalBtn.addEventListener("click", openModal);
+
+
+    const closeModal = function () {
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+    };
+    
+    closeModalBtn.addEventListener("click", closeModal);
+
+    overlay.addEventListener("click", closeModal);
+
     // let myUserName = 'mínasrmy'
     // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
     //     .then(response => response.json())

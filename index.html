@@ -20,8 +20,8 @@
             <a href="#">ABOUT</a>
             <ul>
                 <li><a href="https://github.com/joeytsui1">Github <img src="" alt=""></a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="https://www.linkedin.com/in/joey-tsui-5836a2240/">Linkedin</a></li>
+                <li><button class="btn btn-open">Open Modal</button></li>
             </ul>
         </li>
     </ul>
@@ -33,9 +33,41 @@
             </form>
         </div>
     </nav>
+    <nav id="mini-nav">
+        <div id="unit-nav-tab">
+            <ul>
+                <li>
+                    <a href="#" id="blue">Units</a>
+                    <ul>
+                        <li>
+                            <a href="">5 Cost Units</a>
+                            <a href="">4 Cost Units</a>
+                            <a href="">3 Cost Units</a>
+                            <a href="">2 Cost Units</a>
+                            <a href="">1 Cost Units</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </head>
 
+
 <body>
+
+<div id="section">
+    <section class="modal">
+    <div class="flex">
+        <p>Dowsie Diff is a data visualization of stats from players who played TFT by Riot Games </p>
+        <button class="btn-close">close</button>
+    </div>
+</div>
+
+</section>
+
+<div class="overlay"></div>
+
     <div class="User-Info">
         <div><img id="icon-pic"></div>
         <div id="user-info">
@@ -59,19 +91,26 @@
 
     </div>
     
-    <h2 id="last20gamestext">Last 20 Games</h2>
+    <h2 id="last20gamestext">Last 20 Ranked Games</h2>
     <div class="backdrop"></div>
     <div id="match-histry">
         
         <table id="table">
             <tr>
-                <th>Placed</th>
-                <th>Units Played</th>
-                <th><button>open modal</button></th>
+                <th id="header"></th>
+                <th id="header1"></th>
             </tr>
         </table>
-
-        <canvas id="units-played"></canvas>
+        <div id="units-played-chart">
+            <canvas id="units-played"></canvas>
+            <div id="youtube-vid">
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/epd8OwG8i6k" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+       
     </div>
 </body>
 

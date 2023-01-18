@@ -28,12 +28,25 @@ class MatchHistory {
             .then(matchResponses => Promise.all(matchResponses.map(res => res.json())))
             .then(matches => {
                 this.resetTable()
+                let table = document.querySelector("#table")
+                var header = table.createTHead()
+                header.id = "header-row"
+                let headerRow = header.insertRow(0);
+
+                let placementHeader = headerRow.insertCell();
+                placementHeader.id = "header1"
+                let unitsInGameHeader = headerRow.insertCell();
+                unitsInGameHeader.id = "header"
+                placementHeader.innerHTML = "Placement"
+                unitsInGameHeader.innerHTML = "Units in Game"
+                console.log(matches)
                 matches.forEach(match => {
                     this.displayMatches(match)
                 })
 
                 new Top4Chart(this.placements)
                 new UnitStats(this.unitsPlayed)
+                new Modals()
             })
             .catch(err => err)
     }
@@ -42,7 +55,8 @@ class MatchHistory {
         if (match.info.tft_set_number === 8) {
             let table = document.querySelector("#table")
             let row = table.insertRow();
-
+  
+            
             let placement = row.insertCell();
             let unitsInGame = row.insertCell();
 
@@ -73,7 +87,7 @@ class MatchHistory {
                     if (unit.character_id === "TFT8_WuKong") {
                         unitName = unit.character_id.slice(0, 7) + unit.character_id.slice(7, 8).toLowerCase() + unit.character_id.slice(8)
                         img.src = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-hero-augment/${unitName}.TFT_Set8.png`
-                        img.setAttribute('class', `${unitName.slice(5)}`)
+                            img.setAttribute('class', `${unitName.slice(5)}`)
                         unitsInGame.appendChild(img)
                         this.unitsPlayed.push(unitName)
                     } else {
@@ -84,7 +98,7 @@ class MatchHistory {
                         this.unitsPlayed.push(unitName)
                     }
 
-                })
+                })           
             }
         }
     }

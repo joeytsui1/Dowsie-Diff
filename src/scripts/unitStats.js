@@ -1,4 +1,4 @@
-import { Chart, Colors } from 'chart.js/auto';
+import { Chart } from 'chart.js/auto';
 
 class UnitStats {
     constructor(unitsPlayed) {

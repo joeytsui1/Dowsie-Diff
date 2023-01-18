@@ -14,6 +14,14 @@ nav {
     justify-content: space-between;
 }
 
+#mini-nav{
+    display: flex;
+    justify-content: left;
+    height: 40px;
+    background-color: rgb(40, 41, 42);
+    padding-bottom: 13px;
+}
+
 #title {
     padding-top: 10px;
     margin-left: 20px;
@@ -144,4 +152,104 @@ ul li ul li a {
 
 ul li ul li:hover {
     background: rgb(53, 54, 58);
+}
+
+
+#units-played-chart {
+    width: 900px;
+}
+
+#youtube-vid {
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 103px;
+}
+
+#blue{
+    display: flex;
+    
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+   
+}
+
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    position: relative;
+}
+
+.modal {
+        display: flex;
+        position: absolute;
+        top: 20%;
+        background-color: rgb(55, 44, 98);
+        border-radius: 10px;
+}
+
+.modal .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal p {
+    display: flex;
+    justify-content: center;
+
+    // font-size: 0.9rem;
+    color: white;
+    // margin:;
+    margin-left: 5%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.btn {
+    margin-left: 5%;
+    padding-bottom: 10%;
+    background-color: rgb(53, 54, 58);
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.btn-close {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 20%;
+    background: #eee;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.modal {
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
 }
