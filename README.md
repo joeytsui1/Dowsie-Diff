@@ -1,5 +1,5 @@
-# TFT_Searcher
-TFT_Seacher is a application where you can find stats of any registered Riot Games account for a game called Team Fight Tactic. This game is an multiplayer chess auto battler, where you purchase units and build a team that will battle with other players' team. This application will provides Stats like match histories, result of the player matches, units that the users had played in their team, win-rates.
+# Dowsie Diff
+Dowsie Diff is a application where you can find stats of any registered Riot Games account for a game called Team Fight Tactic. This game is an multiplayer chess auto battler, where you purchase units and build a team that will battle with other players' team. This application will provides Stats like match histories, result of the player matches, units that the users had played in their team, win-rates.
 
 # Technologies, API, Libraries
 Riot Games API: https://developer.riotgames.com/
