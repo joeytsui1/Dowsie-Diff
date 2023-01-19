@@ -1,6 +1,6 @@
 class AboutModal {
     constructor() {
-        this.modal = document.querySelector(".modal")
+        this.modal = document.querySelector(".modals")
         this.overlay = document.querySelector(".overlay")
         this.openModalBtn = document.querySelector(".btn-open")
         this.closeModalBtn = document.querySelector(".btn-close")

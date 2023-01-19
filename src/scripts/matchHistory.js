@@ -17,11 +17,11 @@ class MatchHistory {
     }
 
     getMatchData() {
-        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
+        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
             .then(response => response.json())
             .then(data => {
                 const matches = data.map(match => {
-                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-454a7b84-67c2-4feb-9a70-40ca2aa62c05`)
+                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
                 })
                 return Promise.all(matches)
             })
@@ -87,13 +87,15 @@ class MatchHistory {
                     if (unit.character_id === "TFT8_WuKong") {
                         unitName = unit.character_id.slice(0, 7) + unit.character_id.slice(7, 8).toLowerCase() + unit.character_id.slice(8)
                         img.src = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-hero-augment/${unitName}.TFT_Set8.png`
-                            img.setAttribute('class', `${unitName.slice(5)}`)
+                        img.setAttribute('class', `${unitName.slice(5)}`)
+                        img.setAttribute('title', `${unitName.slice(5)}`)
                         unitsInGame.appendChild(img)
                         this.unitsPlayed.push(unitName)
                     } else {
                         unitName = unit.character_id
                         img.src = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-hero-augment/${unitName}.TFT_Set8.png`
                         img.setAttribute('class', `${unitName.slice(5)}`)
+                        img.setAttribute('title', `${unitName.slice(5)}`)
                         unitsInGame.appendChild(img)
                         this.unitsPlayed.push(unitName)
                     }

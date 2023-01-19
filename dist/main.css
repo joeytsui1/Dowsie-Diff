@@ -634,8 +634,10 @@ nav {
 }
 
 #title {
+  display: flex;
   padding-top: 10px;
-  margin-left: 20px;
+  margin-top: 0.3%;
+  margin-left: 30px;
 }
 
 #username-input {
@@ -650,8 +652,9 @@ nav {
 }
 
 .search-bar {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
   display: flex;
   align-items: center;
 }
@@ -660,7 +663,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: large;
   background-color: #26044f;
   color: white;
@@ -722,43 +725,6 @@ div a {
   display: inline-block;
 }
 
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  display: inline-block;
-}
-
-ul li:hover {
-  background: rgb(53, 54, 58);
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-}
-
-ul li ul li {
-  background: rgb(53, 54, 58);
-  display: block;
-}
-
-ul li ul li a {
-  display: block !important;
-}
-
-ul li ul li:hover {
-  background: rgb(53, 54, 58);
-}
-
 #units-played-chart {
   width: 900px;
 }
@@ -767,10 +733,6 @@ ul li ul li:hover {
   border-radius: 10px;
   margin-top: 50px;
   margin-left: 103px;
-}
-
-#blue {
-  display: flex;
 }
 
 #header {
@@ -787,25 +749,27 @@ ul li ul li:hover {
   position: relative;
 }
 
-.modal {
+.modals {
   display: flex;
   position: absolute;
   top: 20%;
   background-color: rgb(55, 44, 98);
   border-radius: 10px;
-  max-width: 1000px;
-  max-height: 1000px;
+  max-width: 750px;
+  height: 400px;
+  z-index: 2;
 }
 
-.modal .flex {
+.modals .flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 }
 
-.modal p {
+.modals p {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
   margin-left: 5%;
 }
@@ -826,9 +790,6 @@ button {
 }
 
 .btn-close {
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
   margin-right: 20px;
   margin-top: 20%;
   background: #eee;
@@ -847,10 +808,339 @@ button {
   z-index: 1;
 }
 
+.hidden {
+  display: none;
+}
+
+#gif {
+  display: flex;
+  justify-content: center;
+}
+
+#intro {
+  margin-right: 50px;
+}
+
+#booton {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  margin-top: -170px;
+}
+
+#koi {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#diesofpanda {
+  width: 400px;
+}
+
+#koi:hover {
+  animation: shake-tilt 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-tilt {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  20% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  30% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  40% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  60% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  70% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  80% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  90% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+img:hover:after {
+  content: attr(title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 500px;
+  display: none;
+}
+
+img:hover:after {
+  display: block;
+}
+
+img:not(:hover):after {
+  display: none;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  display: block;
+  float: none;
+}
+
+.dropdown {
+  margin-left: 2%;
+}
+
+.dropdown-content a {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: rgb(40, 41, 42);
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#github {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+#linkedin {
+  margin-top: 20px;
+  width: 34px;
+  height: 34px;
+}
+
+#github:hover {
+  animation: shake-tilt 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-tilt {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  30% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  70% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  90% {
+    transform: translateX(-1px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+#linkedin:hover {
+  animation: shake-tilt 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-tilt {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  30% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  70% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  90% {
+    transform: translateX(-1px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+#title:hover {
+  animation: shake-tilt 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-tilt {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  30% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  70% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  90% {
+    transform: translateX(-1px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+#about:hover {
+  animation: shake-tilt 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-tilt {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  30% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  10% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  60% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  70% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+  80% {
+    transform: translateX(1px) rotate(1deg);
+  }
+  90% {
+    transform: translateX(-1px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
 .modal {
+  display: none;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2;
 }
 
-.hidden {
+.modal-content {
+  background-color: rgb(55, 44, 98);
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+  height: 52%;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cost-1-dropdown a {
   display: none;
+}
+
+.cost-1-dropdown:hover a {
+  display: block;
+}
+
+.dropdown-content .cost-1-dropdown a {
+  display: none;
+}
+
+.dropdown-content:hover .cost-1-dropdown a {
+  display: block;
 }

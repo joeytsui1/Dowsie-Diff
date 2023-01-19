@@ -11,21 +11,12 @@
     <title>Dowsie Diff</title>
     <nav>
         <div id="title">
-            <h1>DOWSIE DIFF</h1>
+            <img id="koi" src="images/3BB1C2D1-5749-48A2-81D6-A338F07C0850.png" alt=""><h1>DOWSIE DIFF</h1>
         </div>
         <div class="search-bar">
-<div id="about">
-    <ul>
-        <li>
-            <a href="#">ABOUT</a>
-            <ul>
-                <li><a href="https://github.com/joeytsui1">Github <img src="" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/joey-tsui-5836a2240/">Linkedin</a></li>
-                <li><button class="btn btn-open">Open Modal</button></li>
-            </ul>
-        </li>
-    </ul>
-</div>
+            <div><a href="https://github.com/joeytsui1" target="_blank"><img id="github" src="images/download.png" alt=""></a></div>
+            <div><a href="https://www.linkedin.com/in/joey-tsui-5836a2240/" target="_blank"><img id="linkedin" src="images/png-clipart-computer-icons-social-media-linkedin-small-business-social-media-angle-text.png" alt=""></a></div>
+            <div id="about"><button class="btn btn-open">About</button></div>
             <form>
                 <input type="text" id="username-input" placeholder="Search Summoner">
                 <button type="submit"  id="submit-button-user"><img id="search-button"
@@ -34,21 +25,18 @@
         </div>
     </nav>
     <nav id="mini-nav">
-        <div id="unit-nav-tab">
-            <ul>
-                <li>
-                    <a href="#" id="blue">Units</a>
-                    <ul>
-                        <li>
-                            <a href="">5 Cost Units</a>
-                            <a href="">4 Cost Units</a>
-                            <a href="">3 Cost Units</a>
-                            <a href="">2 Cost Units</a>
-                            <a href="">1 Cost Units</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="dropdown">
+            <a class="dropdown-button">Units</a>
+            <div class="dropdown-content">
+                <a href="#">1 Costs</a>
+                    <div class="cost-1-dropdown">
+                        <a href="#" id="modal-link" title="Ashe">Ashe</a>
+                    </div>
+                <a href="#">2 Costs</a>
+                <a href="#">3 Costs</a>
+                <a href="#">4 Costs</a>
+                <a href="#">5 Costs</a>
+            </div>
         </div>
     </nav>
 </head>
@@ -56,20 +44,39 @@
 
 <body>
 
-<div id="section">
-    <section class="modal">
-    <div class="flex">
-        <p>Dowsie Diff is a data visualization of stats from players who played TFT by Riot Games. The user-friendly interface allows players to easily view their match history, including information such as win rate,
-        average placement, and most frequently used champions. </p>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div>
+            <div><h2>Ashe</h2></div>
+            <div id="AsheImg"><img src="https://ddragon.leagueoflegends.com/cdn/13.1.1/img/tft-champion/TFT8_Ashe.TFT_Set8.png" alt=""></div>
+        </div>
 
-        <img src="https://cdn.7tv.app/emote/63b7828d01c84b2851e2fe3d/4x.webp" alt="Your gif description">
-        <button class="btn-close">close</button>
+        <div>
+            <p>Traits: LaserCorps, Recon </p>
+            <p>Attack Damage: 60</p>
+            <p>Armor: 60</p>
+            <p>Health Points: 650 </p>
+            <p>Magic Resist: 60</p>
+            <p>Ability: Ranger's Focus</p>
+            <p>Ashe increases her focus for the next 4 seconds, gaining Attack Damage.</p>
+        </div>
+    </div>
+</div>
+<div id="section">
+    <section class="modals ">
+    <div id="box">
+        <div id="intro"><p>Dowsie Diff is a data visualization of stats from players who played TFT by Riot Games. The user-friendly interface allows players to easily view their match history, including information such as win rate,
+        average placement, and most frequently used champions. It automatically begins on my account, to begin enter your summoner's name!</p></div>
+        </br>
+        <div id="gif"><img id="diesofpanda"src="https://cdn.7tv.app/emote/63b7828d01c84b2851e2fe3d/4x.webp" alt="Your gif description"></div>
+        <div id="booton"><button class="btn-close">&times;</button></div>
     </div>
 </div>
 
 </section>
 
-<div class="overlay"></div>
+<div class="overlay "></div>
 
     <div class="User-Info">
         <div><img id="icon-pic"></div>
