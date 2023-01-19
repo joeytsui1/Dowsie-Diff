@@ -6,7 +6,8 @@ Dowsie Diff is a application where you can find stats of any registered Riot Gam
 - Chart.js: https://www.chartjs.org/
 
 # Wireframe
-<img width="889" alt="Screenshot 2023-01-12 at 9 39 46 PM" src="https://user-images.githubusercontent.com/109801026/212226230-8ceef8d6-e921-4c04-89c2-8268f07ef0e5.png">
+![image](https://user-images.githubusercontent.com/109801026/213545382-952bac05-8461-443c-a5d6-200911aa41b6.png)
+
 
 # Functionality & MVP 
 - Interactive Visual Charts/Graph/Tables 
