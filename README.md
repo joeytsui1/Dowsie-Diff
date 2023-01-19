@@ -1,16 +1,20 @@
 # Dowsie Diff
-Dowsie Diff is a application where you can find stats of any registered Riot Games account for a game called Team Fight Tactic. This game is an multiplayer chess auto battler, where you purchase units and build a team that will battle with other players' team. This application will provides Stats like match histories, result of the player matches, units that the users had played in their team, win-rates.
+Dowsie Diff is a application where you can find stats of any registered Riot Games account for a game called Team Fight Tactic. This game is an multiplayer chess auto battler, where you purchase units and build a team that will battle with other players' team. The user-friendly interface allows players to easily view their match history, including information such as win rate, average placement, and most frequently used champions.
 
 # Technologies, API, Libraries
-Riot Games API: https://developer.riotgames.com/
-Chart.js: https://www.chartjs.org/
+- Riot Games API: https://developer.riotgames.com/
+- Chart.js: https://www.chartjs.org/
 
 # Wireframe
 <img width="889" alt="Screenshot 2023-01-12 at 9 39 46 PM" src="https://user-images.githubusercontent.com/109801026/212226230-8ceef8d6-e921-4c04-89c2-8268f07ef0e5.png">
 
+# Functionality & MVP 
 
 # Implementation Timeline
-Friday - Querying the Riot API and storing the data we get so can be implemented to render in HTML
-Saturday  - Connecting all of the files together
-Sunday - Setting up HTML file
-Monday - Rendering the view of User data onto the HTML
+- Friday - Querying the Riot API and storing the data we get so can be implemented to  render in HTML
+- Saturday - Started on individuals classes and connect all the pages to each other.
+- Sunday - Setting up the HTML with needed tables and divs
+- Monday - Rendering the view of User data onto the HTML by using vanilla DOM
+- Tuesday - Implementing CSS styling on to the data that is showned in HTML
+- Wednesday - Worked on more CSS Styling and added about modal and my social links 
+- Thursday - implementing a dropdown menu demo that is for future implementation

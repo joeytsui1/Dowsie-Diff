@@ -37,6 +37,7 @@ nav {
 #search-button {
     width: 13px;
     height: 13px;
+    border-radius: 10px;
 }
 
 .search-bar {
@@ -45,6 +46,13 @@ nav {
     padding-right: 20px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+}
+
+.search-bar form input {
+    background-color: rgb(53, 54, 58);
+    color: white;
+    border-radius: 10px;
 }
 
 body {
@@ -151,8 +159,9 @@ div a {
         background-color: rgb(55, 44, 98);
         border-radius: 10px;
         max-width: 750px;
-        height: 400px;
+        height: 500px;
         z-index: 2;
+        transition: opacity .5s;
 }
 
 .modals .flex {
@@ -311,8 +320,8 @@ img:not(:hover):after {
 
 #linkedin {
     margin-top: 20px;
-    width: 34px;
-    height: 34px;
+    width: 33px;
+    height: 33px;
 }
 
 #github:hover {
@@ -460,7 +469,7 @@ img:not(:hover):after {
     }
 
     90% {
-        transform: translateX(-1px) rotate(-5deg);
+        transform: translateX(-1px) rotate(-1deg);
     }
 
     100% {
@@ -564,4 +573,17 @@ img:not(:hover):after {
 
 .dropdown-content:hover .cost-1-dropdown a {
     display: block;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#me {
+    padding-right: 10px;
+    margin-right: 15px;
 }

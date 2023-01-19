@@ -8,6 +8,7 @@ class MatchHistory {
         this.data.puuid;
         this.placements = []
         this.unitsPlayed = []
+        this.top4forUnits = {}  
         this.getMatchData()
     }
 
@@ -38,8 +39,7 @@ class MatchHistory {
                 let unitsInGameHeader = headerRow.insertCell();
                 unitsInGameHeader.id = "header"
                 placementHeader.innerHTML = "Placement"
-                unitsInGameHeader.innerHTML = "Units in Game"
-                console.log(matches)
+                unitsInGameHeader.innerHTML = "Units in Game"   
                 matches.forEach(match => {
                     this.displayMatches(match)
                 })
@@ -68,14 +68,15 @@ class MatchHistory {
                 }
             }
             if (match.info.queue_id === 1100) {
-                if (match.info.participants[index].placement === 1) {
-                    placement.innerHTML = `${match.info.participants[index].placement}st`
-                } else if (match.info.participants[index].placement === 2) {
-                    placement.innerHTML = `${match.info.participants[index].placement}nd`
-                } else if (match.info.participants[index].placement === 3) {
-                    placement.innerHTML = `${match.info.participants[index].placement}rd`
+                let eachPlacement = match.info.participants[index].placement
+                if (eachPlacement === 1) {
+                    placement.innerHTML = `${eachPlacement}st`
+                } else if (eachPlacement === 2) {
+                    placement.innerHTML = `${eachPlacement}nd`
+                } else if (eachPlacement === 3) {
+                    placement.innerHTML = `${eachPlacement}rd`
                 } else {
-                    placement.innerHTML = `${match.info.participants[index].placement}th`
+                    placement.innerHTML = `${eachPlacement}th`
                 }
 
                 this.placements.push(match.info.participants[index].placement)

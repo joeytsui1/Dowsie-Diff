@@ -53,6 +53,13 @@ class Top4Chart {
                 }]
             },
             options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: "white"
+                        }
+                    }
+                },
                 scales: {
                     y: {
                         beginAtZero: true,

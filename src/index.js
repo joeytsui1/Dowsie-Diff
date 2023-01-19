@@ -9,7 +9,7 @@ import ChampionModal from './scripts/championModal'
 document.addEventListener('DOMContentLoaded', () => {
     new AboutModal()
     new ChampionModal()
-    
+
     // let myUserName = 'mínasrmy'
     // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
     //     .then(response => response.json())
@@ -54,7 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert("User Is Not Found, Try Again")
             })
     })
-
-    let allClass = document.querySelectorAll(".class")
-    console.log(allClass)
 })

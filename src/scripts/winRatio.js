@@ -32,9 +32,20 @@ class WinRatio{
                     ],
                     borderWidth: 1
                 }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: "white"
+                        }
+                    }
+                }
+                
             }
         });
     }
 }
+
 
 export default WinRatio

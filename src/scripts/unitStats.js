@@ -70,6 +70,13 @@ class UnitStats {
                 }]
             },
             options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: "white"
+                        }
+                    }
+                },
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -84,7 +91,7 @@ class UnitStats {
                     }
                 }
             }
-        });
+        }); 
     }
 }
 
