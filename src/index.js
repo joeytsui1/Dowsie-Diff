@@ -10,24 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
     new AboutModal()
     new ChampionModal()
 
-    // let myUserName = 'mínasrmy'
-    // fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         new UserInfo(data)
-    //         new MatchHistory(data)
-    //         return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
-    //             .then(response => response.json())
-    //             .then(data => {
-    //                 if (data.length === 0) {
-    //                     new WinRatio(0, 0)
-    //                 } else {
-    //                     new WinRatio(data[0].wins, data[0].losses)
-    //                 }
+    let myUserName = 'mínasrmy'
+    fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+        .then(response => response.json())
+        .then(data => {
+            new UserInfo(data)
+            new MatchHistory(data)
+            return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length === 0) {
+                        new WinRatio(0, 0)
+                    } else {
+                        new WinRatio(data[0].wins, data[0].losses)
+                    }
 
-    //                 new UserRankInfo(data)
-    //             })   
-    //     })
+                    new UserRankInfo(data)
+                })   
+        })
 
     const submitUsername = document.querySelector("#submit-button-user")
     submitUsername.addEventListener("click", e => {
