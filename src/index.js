@@ -4,19 +4,21 @@ import MatchHistory from './scripts/matchHistory'
 import WinRatio from './scripts/winRatio'
 import AboutModal from './scripts/aboutModal'
 import ChampionModal from './scripts/championModal'
-
+import api_key from "./scripts/apikey.mjs"
 
 document.addEventListener('DOMContentLoaded', () => {
     new AboutModal()
     new ChampionModal()
-
+    
+    const API_KEY = api_key
+    console.log(API_KEY)
     let myUserName = 'mínasrmy'
-    fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=`)
+    fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=${API_KEY}`)
         .then(response => response.json())
         .then(data => {
             new UserInfo(data)
-            new MatchHistory(data)
-            return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=`)
+            new MatchHistory(data, API_KEY)
+            return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=${API_KEY}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.length === 0) {
@@ -34,12 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault()
         const username = document.querySelector("#username-input").value
 
-        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=`)
+        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=${API_KEY}`)
             .then(response => response.json())
             .then(data => {
                 new UserInfo(data)
                 new MatchHistory(data)
-                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=`)
+                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=${API_KEY}`)
                     .then(response => response.json())
                     .then(data => {
                         if(data.length === 0){

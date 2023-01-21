@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const config = {
     entry: [
@@ -42,3 +43,23 @@ module.exports = (env, argv) => {
 
     return config;
 }
+
+module.exports = {
+    plugins: [
+        new Dotenv()
+    ]
+};
+
+module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            }
+        ]
+    }
+};

@@ -1,9 +1,11 @@
 
 import Top4Chart from "./top4Chart.js"
 import UnitStats from "./unitStats.js"
+import api_key from "./apikey.mjs"
 
 class MatchHistory {
-    constructor(data) {
+    constructor(data, api) {
+        this.api = api_key
         this.data = data
         this.data.puuid;
         this.placements = []
@@ -18,11 +20,12 @@ class MatchHistory {
     }
 
     getMatchData() {
-        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=`)
+        console.log(this.api)
+        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=${this.api}`)
             .then(response => response.json())
             .then(data => {
                 const matches = data.map(match => {
-                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=`)
+                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=${this.api}`)
                 })
                 return Promise.all(matches)
             })
