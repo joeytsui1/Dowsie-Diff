@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     new ChampionModal()
 
     let myUserName = 'mínasrmy'
-    fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+    fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=`)
         .then(response => response.json())
         .then(data => {
             new UserInfo(data)
             new MatchHistory(data)
-            return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+            return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.length === 0) {
@@ -34,12 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault()
         const username = document.querySelector("#username-input").value
 
-        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+        fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${username}?api_key=`)
             .then(response => response.json())
             .then(data => {
                 new UserInfo(data)
                 new MatchHistory(data)
-                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+                return fetch(`https://na1.api.riotgames.com/tft/league/v1/entries/by-summoner/${data.id}?api_key=`)
                     .then(response => response.json())
                     .then(data => {
                         if(data.length === 0){

@@ -18,11 +18,11 @@ class MatchHistory {
     }
 
     getMatchData() {
-        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+        fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=`)
             .then(response => response.json())
             .then(data => {
                 const matches = data.map(match => {
-                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=RGAPI-73d5b9e1-8955-4e91-b56e-55077fa1c864`)
+                    return fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/${match}?api_key=`)
                 })
                 return Promise.all(matches)
             })
