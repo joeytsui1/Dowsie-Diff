@@ -13,7 +13,14 @@ Dowsie Diff is a application where you can find stats of any registered Riot Gam
 - Interactive Visual Charts/Graph/Tables 
 - User inputs to fetch data from the Riot Games API
 - Dynamically renders the charts and tables with data that we get back from the fetch call
+
+<img width="1728" alt="Screenshot 2023-01-23 at 8 13 10 AM" src="https://user-images.githubusercontent.com/109801026/214048982-ff08fd86-4884-487a-8625-b8295373b538.png">
+
 - Dropped Menu with different costs of units and if clicked in a modal would show up for the unit
+
+- Once you load this application you will be greeted with this modal:
+  <img width="772" alt="Screenshot 2023-01-23 at 8 12 16 AM" src="https://user-images.githubusercontent.com/109801026/214048831-2308f00a-63e3-4c02-9594-5dd54ddd7158.png">
+
 
 # Implementation Timeline
 - Friday - Querying the Riot API and storing the data we get so can be implemented to  render in HTML
