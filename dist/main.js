@@ -156,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst api_key = \"RGAPI-88561ab5-247a-47c5-b807-348f0fab7206\"\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (api_key);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyaXB0cy9hcGlrZXkubWpzLmpzIiwibWFwcGluZ3MiOiI7QUFBQTs7QUFFQSwrREFBZSIsInNvdXJjZXMiOlsid2VicGFjazovL3RmdF9wbGF5ZXJfc2VhcmNoLy4vc3JjL3NjcmlwdHMvYXBpa2V5Lm1qcz9iNWY2Il0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGFwaV9rZXkgPSBcIlJHQVBJLTg4NTYxYWI1LTI0N2EtNDdjNS1iODA3LTM0OGYwZmFiNzIwNlwiXG5cbmV4cG9ydCBkZWZhdWx0IGFwaV9rZXkiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/scripts/apikey.mjs\n");
+eval("__webpack_require__.r(__webpack_exports__);\nconst api_key = \"RGAPI-25ac886a-9adf-484f-893f-141f03627325\"\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (api_key);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2NyaXB0cy9hcGlrZXkubWpzLmpzIiwibWFwcGluZ3MiOiI7QUFBQTs7QUFFQSwrREFBZSIsInNvdXJjZXMiOlsid2VicGFjazovL3RmdF9wbGF5ZXJfc2VhcmNoLy4vc3JjL3NjcmlwdHMvYXBpa2V5Lm1qcz9iNWY2Il0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGFwaV9rZXkgPSBcIlJHQVBJLTI1YWM4ODZhLTlhZGYtNDg0Zi04OTNmLTE0MWYwMzYyNzMyNVwiXG5cbmV4cG9ydCBkZWZhdWx0IGFwaV9rZXkiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/scripts/apikey.mjs\n");
 
 /***/ })
 
