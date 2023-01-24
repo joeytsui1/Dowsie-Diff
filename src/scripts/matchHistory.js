@@ -20,7 +20,6 @@ class MatchHistory {
     }
 
     getMatchData() {
-        console.log(this.api)
         fetch(`https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${this.data.puuid}/ids?start=0&count=20&api_key=${this.api}`)
             .then(response => response.json())
             .then(data => {

@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new ChampionModal()
     
     const API_KEY = api_key
-    console.log(API_KEY)
     let myUserName = 'mínasrmy'
     fetch(`https://na1.api.riotgames.com/tft/summoner/v1/summoners/by-name/${myUserName}?api_key=${API_KEY}`)
         .then(response => response.json())
