@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst api_key = \"RGAPI-6d1ec643-8937-4f54-8f63-f52547f898f6\"\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (api_key);\n\n//# sourceURL=webpack://tft_player_search/./src/scripts/apikey.mjs?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst api_key = \"RGAPI-c457fd3c-0f8a-4931-99f5-dca8c723690f\"\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (api_key);\n\n//# sourceURL=webpack://tft_player_search/./src/scripts/apikey.mjs?");
 
 /***/ })
 
